@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../../assets/images/Moov.png">
-    <title>Main Page</title>
+    <title>Subscriber</title>
 
     <!-- CDNs -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -64,7 +64,7 @@
 
 
     <!-- TITLE -->
-    <section class="content-header">
+    <section class="content-header mt-3">
         <div class="container-fluid">
           <div class="row mb-2 mt-2">
             <div class="col-lg-12 text-center">
@@ -75,12 +75,12 @@
     </section>
 
     <!-- CONTENT START -->
-    <section class="content">
+    <section class="content mb-5">
         <div class="container">
             <!-- ROW 1 -->
             <div class="row">
                 <div class="col-5">
-                    <div class="form-floating">
+                    <div class="form-floating fs-6">
                         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                             <option value="1">Account ID</option>
                             <option value="2">MSISDN</option>
@@ -92,17 +92,17 @@
 
                 <div class="col-5">
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingInput" placeholder="account id"  oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                        <label for="floatingInput">Account ID</label>
+                        <input type="number" class="form-control" id="acc_id" placeholder="acc id" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                        <label for="acc_id">Account ID</label>
                     </div>
                 </div>
                 
+                <!-- BUTTON -->
                 <div class="col-2 d-flex align-items-center justify-content-end">
                     <div class="d-grid gap-2" style="width: 100%;">
-                        <button class="btn btn-block" type="button" style="background-color: #D95F08; color:white; height: 100%;">SEARCH</button>
+                        <button class="btn btn-block" type="button" style="background-color: #D95F08; color:white; height: 100%; font-size: 14px;">SEARCH</button>
                     </div>
                 </div>
-                
             </div>
 
             <!-- ROW 2 -->
@@ -121,9 +121,10 @@
                     </div>
                 </div>
                 
+                <!-- BUTTON -->
                 <div class="col-2 d-flex align-items-center justify-content-end">
                     <div class="d-grid gap-2" style="width: 100%;">
-                        <button class="btn btn-block" type="button" style="background-color: #D95F08; color:white; height: 100%;">DOWNLOAD LIST</button>
+                        <button class="btn btn-block" type="button" style="background-color: #D95F08; color:white; height: 100%; font-size: 14px;">DOWNLOAD LIST</button>
                     </div>
                 </div>
             </div>
@@ -135,7 +136,7 @@
         <div class="container-fluid">
           <div class="row mb-2 mt-2">
             <div class="col-lg-12 text-center">
-              <p class="fs-2" style="font-weight: bold;"><i class="bi bi-person-vcard-fill" style="color: #D95F08;"></i> Subscriber Details</p>
+              <p class="fs-4" style="font-weight: bold;"><i class="bi bi-person-vcard-fill" style="color: #D95F08;"></i> Subscriber Details</p>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -146,136 +147,7 @@
         <div class="container">
           <div class="row mb-2 mt-2">
             <div class="col-lg-12">
-              <p class="fs-3" style="font-weight: bold; color: #0055BB;"> Account Details</p>
-            </div>
-          </div>
-        </div><!-- /.container-fluid -->
-    </section>
-
-    <!-- INPUTS -->
-    <section class="content">
-        <div class="container">
-            <!-- ROW 1 -->
-            <div class="row">
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingInput" placeholder="acc id" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                        <label for="floatingInput">ACCOUNT ID</label>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="nickname">
-                        <label for="floatingInput">NICKNAME</label>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingInput" placeholder="MSISDN" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                        <label for="floatingInput">MSISDN</label>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ROW 2 -->
-            <div class="row">
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingInput" placeholder="acc id" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                        <label for="floatingInput">MAIN AMOUNT</label>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="commision amount">
-                        <label for="floatingInput">COMMISION AMOUNT</label>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="acc type">
-                        <label for="floatingInput">ACCOUNT TYPE</label>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ROW 3 -->
-            <div class="row">
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="date registered" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                        <label for="floatingInput">DATE REGISTERED</label>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="date modified">
-                        <label for="floatingInput">DATE MODIFIED</label>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="kyc">
-                        <label for="floatingInput">KYC</label>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ROW 4 -->
-            <div class="row">
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingInput" placeholder="reference acc" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                        <label for="floatingInput">REFERENCE ACCOUNT</label>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="acc status">
-                        <label for="floatingInput">ACCOUNT STATUS</label>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingInput" placeholder="user id" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                        <label for="floatingInput">USER ID</label>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ROW 5 -->
-            <div class="row">
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="locked">
-                        <label for="floatingInput">LOCKED</label>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingInput" placeholder="control reference" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                        <label for="floatingInput">CONTROL REFERENCE</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PERSONAL DETAILS -->
-    <section class="content-header">
-        <div class="container">
-          <div class="row mb-2 mt-2">
-            <div class="col-lg-12">
-              <p class="fs-3" style="font-weight: bold; color: #0055BB;"> Personal Details</p>
+              <p class="fs-5" style="font-weight: bold; color: #0055BB;"> Account Details</p>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -288,22 +160,22 @@
             <div class="row">
                 <div class="col-4">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="fname">
-                        <label for="floatingInput">FIRST NAME</label>
+                        <input type="text" class="form-control" id="accID" style="font-weight: bold;" value="023475757" readonly>
+                        <label for="accID">ACCOUNT ID</label>
                     </div>
                 </div>
 
                 <div class="col-4">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="sec name">
-                        <label for="floatingInput">SECOND NAME</label>
+                        <input type="text" class="form-control" id="nickname" style="font-weight: bold;"  value="ABDUL" readonly>
+                        <label for="nickname">NICKNAME</label>
                     </div>
                 </div>
 
                 <div class="col-4">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="MSISDN">
-                        <label for="floatingInput">LAST NAME</label>
+                        <input type="text" class="form-control" id="msisdn" style="font-weight: bold;"  value="1231231231" readonly>
+                        <label for="msisdn">MSISDN</label>
                     </div>
                 </div>
             </div>
@@ -312,22 +184,22 @@
             <div class="row">
                 <div class="col-4">
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingInput" placeholder="id num" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                        <label for="floatingInput">ID NUMBER</label>
+                        <input type="text" class="form-control" id="main_amount" style="font-weight: bold;" value="111 000" oninput="this.value = this.value.replace(/[^0-9]/g, '');" readonly>
+                        <label for="main_amount">MAIN AMOUNT</label>
                     </div>
                 </div>
 
                 <div class="col-4">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="id desc">
-                        <label for="floatingInput">ID DESCRIPTION</label>
+                        <input type="text" class="form-control" id="commision_amount" style="font-weight: bold;" value="1500" readonly>
+                        <label for="commision_amount">COMMISION AMOUNT</label>
                     </div>
                 </div>
 
                 <div class="col-4">
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingInput" placeholder="acc type" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                        <label for="floatingInput">ID EXPIRY DATE</label>
+                        <input type="text" class="form-control" id="acc_type" style="font-weight: bold;" value="MCOM" readonly>
+                        <label for="acc_type">ACCOUNT TYPE</label>
                     </div>
                 </div>
             </div>
@@ -336,27 +208,155 @@
             <div class="row">
                 <div class="col-4">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="nationality">
-                        <label for="floatingInput">NATIONALITY</label>
+                        <input type="text" class="form-control" id="registration_date" style="font-weight: bold;" value="01/08/2023 10:33:09" readonly>
+                        <label for="registration_date">DATE REGISTERED</label>
                     </div>
                 </div>
 
                 <div class="col-4">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="gender">
-                        <label for="floatingInput">GENDER</label>
+                        <input type="text" class="form-control" id="date_modified" style="font-weight: bold;" value="01/08/2023 12:13:09" readonly>
+                        <label for="date_modified">DATE MODIFIED</label>
                     </div>
                 </div>
 
                 <div class="col-4">
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingInput" placeholder="date of birth" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                        <label for="floatingInput">DATE OF BIRTH</label>
+                        <input type="text" class="form-control" id="kyc" style="font-weight: bold;" value="APPROVED" readonly>
+                        <label for="kyc">KYC</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 4 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="reference_acc" style="font-weight: bold;" value="0,37,38" readonly>
+                        <label for="reference_acc">REFERENCE ACCOUNT</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="acc_status" style="font-weight: bold;" value="ACTIVE" readonly>
+                        <label for="acc_status">ACCOUNT STATUS</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="user_id" style="font-weight: bold;" value="ABDUL.JAFAR@GMAIL.COM" readonly>
+                        <label for="user_id">USER ID</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 5 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="locked" style="font-weight: bold;" value="NO" readonly>
+                        <label for="locked">LOCKED</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="control_reference" style="font-weight: bold;" value="1" readonly>
+                        <label for="control_reference">CONTROL REFERENCE</label>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- PERSONAL DETAILS -->
+    <section class="content-header">
+        <div class="container">
+          <div class="row mb-2 mt-2">
+            <div class="col-lg-12">
+              <p class="fs-5" style="font-weight: bold; color: #0055BB;"> Personal Details</p>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- INPUTS -->
+    <section class="content mb-5">
+        <div class="container">
+            <!-- ROW 1 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="fname" style="font-weight: bold;" value="ABDUL" readonly>
+                        <label for="fname">FIRST NAME</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="sname" style="font-weight: bold;" value="JUAN" readonly>
+                        <label for="sname">SECOND NAME</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="lname" style="font-weight: bold;" value="JAFAR" readonly>
+                        <label for="lname">LAST NAME</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="id_num" style="font-weight: bold;" value="04923456" readonly>
+                        <label for="id_num">ID NUMBER</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="id_desc" style="font-weight: bold;" value="N/A" readonly>
+                        <label for="id_desc">ID DESCRIPTION</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="expiry_id" style="font-weight: bold;" value="08/23/2024 11:23:09" readonly>
+                        <label for="expiry_id">ID EXPIRY DATE</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 3 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nationality" style="font-weight: bold;" value="AFRICAN" readonly>
+                        <label for="nationalty">NATIONALITY</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="gender" style="font-weight: bold;" value="MALE" readonly>
+                        <label for="gender">GENDER</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="dob" style="font-weight: bold;" value="08/23/1984 00:00:00" readonly>
+                        <label for="dob">DATE OF BIRTH</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
