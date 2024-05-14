@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../assets/images/Moov.png">
+    <title>Subscriber</title>
+
+    <!-- CDNs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+    </head>
+
+    <!-- FOR DISABLING INPUT NUMBER ARROW CONTROLS (OTP) -->
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+
+
+        /*Remove Border Table*/
+        #myTable tbody tr td {
+            border-bottom: #E4E4E5;
+        }
+
+        #myTable{
+            border: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #0055BB;">
+        <div class="container-fluid">
+          <a class="navbar-brand"  href="#"><i class="bi bi-list" style="color: white;"></i></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white;">Welcome, Merchant!</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <!-- LANGUAGE SELECTION -->
+                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                    <i class="bi bi-translate"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Philippines</a></li>
+                    <li><a class="dropdown-item" href="#">Burkina</a></li>
+                    <li><a class="dropdown-item" href="#">Dubai</a></li>
+                    <li><a class="dropdown-item" href="#">Togo</a></li>
+                    <li><a class="dropdown-item" href="#">Benin</a></li>
+                    <li><a class="dropdown-item" href="#">Mali</a></li>
+                </ul>
+
+                <!-- LOGOUT -->
+                <a class="btn" href="../Login.html" role="button" style="color: white;">
+                    <i class="bi bi-box-arrow-right"></i>
+                </a>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+
+    <!-- TITLE -->
+    <section class="content-header mt-3">
+        <div class="container-fluid">
+          <div class="row mb-2 mt-2">
+            <div class="col-lg-12 text-center">
+              <p class="fs-4" style="font-weight: bold;"><i class="bi bi-eye-fill" style="color: #D95F08;"></i> SUBSCRIBER PENDING REGISTRATION</p>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- CONTENT START -->
+    <section class="content mb-5">
+        <div class="container">
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group row text-center">
+                            <label for="entriesSelect" class="col-sm-2 col-form-label">Showing</label>
+                            <div class="col-sm-2 custom-select-wrapper">
+                                <select id="entriesSelect" class="form-control text-center">
+                                    <option value="5">5</option> 
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </div>
+                            <label for="entriesSelect" class="col-sm-1 col-form-label">Entries</label>
+                        </div>    
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <input class="form-control mb-4" id="myInput" type="text" placeholder="Search..." style="border-radius: 20px; width: 30%; border-color: #676767;">
+                    </div>
+                </div>
+        
+                <table id="myTable" class="table table-hover text-center mb-3">
+                    <thead>
+                        <tr>
+                            <th style="border-right: 1px solid white; border-top-left-radius: 25px; background-color: #D95F08; color:white;">FIRSTNAME</th>
+                            <th style="border-right: 1px solid white; background-color: #D95F08; color:white;">LASTNAME</th>
+                            <th style="border-right: 1px solid white; background-color: #D95F08; color:white;">MSISDN</th>
+                            <th style="border-top-right-radius: 25px; background-color: #D95F08; color:white;">STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTableBody">
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>09876542131</td>
+                            <td>ACTIVE</td>
+                        </tr>
+                        <tr>
+                            <td>Jen</td>
+                            <td>Kim</td>
+                            <td>09876542131</td>
+                            <td>DEACTIVE</td>
+                        </tr>
+                        <tr>
+                            <td>Ali</td>
+                            <td>Dooley</td>
+                            <td>09876542131</td>
+                            <td>DEACTIVE</td>
+                        </tr>
+                        <tr>
+                            <td>Val</td>
+                            <td>Doe</td>
+                            <td>09876542131</td>
+                            <td>ACTIVE</td>
+                        </tr>
+                        <tr>
+                            <td>Lisa</td>
+                            <td>Doe</td>
+                            <td>09876542131</td>
+                            <td>ACTIVE</td>
+                        </tr>
+                        <tr>
+                            <td>Henry</td>
+                            <td>James</td>
+                            <td>09876542131</td>
+                            <td>ACTIVE</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>09876542131</td>
+                            <td>ACTIVE</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>09876542131</td>
+                            <td>ACTIVE</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Pagination -->
+                <div id="pagination" class="d-flex justify-content-end">
+                    <button class="btn btn-outline-dark mx-1" onclick="previousPage()" disabled style="font-size: 12px;">Prev</i></button>
+                    <button class="btn btn-outline-dark mx-1" onclick="goToPage(1)" style="font-size: 12px;">1</button>
+                    <button class="btn btn-outline-dark mx-1" onclick="goToPage(1)" style="font-size: 12px;">2</button>
+                    <button class="btn btn-outline-dark mx-1" onclick="goToPage(1)" style="font-size: 12px;">3</button>
+                    <button class="btn btn-outline-dark mx-1" onclick="goToPage(1)" style="font-size: 12px;">4</button>
+                    <button class="btn btn-outline-dark mx-1" onclick="goToPage(1)" style="font-size: 12px;">5</button>
+                    <button class="btn btn-outline-dark mx-1" onclick="nextPage()" style="font-size: 12px;">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+
+    <script>
+        //FOR PAGINATION
+        let currentPage = 1;
+        const rowsPerPage = 5;
+        const tableRows = document.querySelectorAll("#myTableBody tr");
+
+        function goToPage(pageNumber) {
+            currentPage = pageNumber;
+            updatePaginationButtons();
+            displayTableRows();
+        }
+
+        function previousPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                updatePaginationButtons();
+                displayTableRows();
+            }
+        }
+
+        function nextPage() {
+            const totalPages = Math.ceil(tableRows.length / rowsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                updatePaginationButtons();
+                displayTableRows();
+            }
+        }
+
+        function updatePaginationButtons() {
+            const totalPages = Math.ceil(tableRows.length / rowsPerPage);
+            const prevButton = document.querySelector("#pagination button:first-child");
+            const nextButton = document.querySelector("#pagination button:last-child");
+            prevButton.disabled = currentPage === 1;
+            nextButton.disabled = currentPage === totalPages;
+        }
+
+        function displayTableRows() {
+            const startIndex = (currentPage - 1) * rowsPerPage;
+            const endIndex = startIndex + rowsPerPage;
+            tableRows.forEach((row, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    row.style.display = "";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        }
+
+        // Initial setup
+        updatePaginationButtons();
+        displayTableRows();
+
+        document.getElementById("myInput").addEventListener("input", function() {
+            const filter = this.value.toUpperCase();
+            const tableRows = document.querySelectorAll("#myTableBody tr");
+            tableRows.forEach(row => {
+                const tdValues = row.querySelectorAll("td");
+                let found = false;
+                tdValues.forEach(td => {
+                    if (td.textContent.toUpperCase().indexOf(filter) > -1) {
+                        found = true;
+                    }
+                });
+                row.style.display = found ? "" : "none";
+            });
+        });
+
+        // Show Entries
+        document.getElementById("entriesSelect").addEventListener("change", function() {
+            rowsPerPage = parseInt(this.value);
+            currentPage = 1;
+            updatePaginationButtons();
+            displayTableRows();
+        });
+
+        
+        //DATATABLE SORTING
+        $(document).ready(function() {
+            $('#myTable').DataTable({
+                "paging": false, // Disable pagination
+                "searching": false, // Disable searching
+                "info": false, // Disable information display
+                "ordering": true, // Enable sorting
+                "order": [], // Disable default sorting
+                "columnDefs": [
+                    { "orderable": false, "targets": [] } // Disable sorting for specific columns if needed
+                ]
+            });
+        });
+        
+    </script>
+</body>
+</html>
