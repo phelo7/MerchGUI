@@ -105,7 +105,7 @@
 
                 <div class="col-3">
                     <div class="form-floating">
-                        <select class="form-select" id="acc_type" aria-label="Floating label select example">
+                        <select class="form-select" id="acc_type" aria-label="Account Type">
                             <option>SELECT ACCOUNT TYPE</option>
                             <option value="Type1">ACC TYPE 1</option>
                             <option value="Type2">ACC TYPE 2</option>
@@ -116,7 +116,7 @@
 
                 <div class="col-3">
                     <div class="form-floating">
-                        <select class="form-select" id="acc_status" aria-label="Floating label select example">
+                        <select class="form-select" id="acc_status" aria-label="Account Status">
                             <option>SELECT STATUS</option>
                             <option value="Active">ACTIVE</option>
                             <option value="Deactive">DEACTIVE</option>
@@ -320,15 +320,14 @@
     </section>
 
     <!-- SERVER MESSAGE MODAL  -->
-    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
+    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="msgModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" style="border-radius: 20px;">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: #D95F08;color:white;">
-                    <h5 class="modal-title text-center" id="otpModalLabel" style="text-shadow: 1px 0px 2px rgb(26, 26, 26);"> MESSAGE!</h5>
+                    <h5 class="modal-title text-center" id="msgModalLabel" style="text-shadow: 1px 0px 2px rgb(26, 26, 26);"> MESSAGE!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="background-color: #F4E6DC;">
-                    <!-- OTP INPUT FIELDS -->
                     <div class="row px-5 pt-2 mb-5">
                         <div class="col-12 p-2">
                             <input type="text" class="form-control text-center" id="message" style="font-weight: bold;" value="SUBSCRIBER SUCCESSFULLY REGISTERED!" style="border-radius: 20px; border-color: #B6B6B6;" readonly>
