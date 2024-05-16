@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar With Bootstrap</title>
-     <!-- ICONS -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-      <!-- CDNS -->
+
+    <!-- ICONS -->
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CDNs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS--> 
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+
+     <!-- FOR DISABLING INPUT NUMBER ARROW CONTROLS (OTP) -->
+     <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+    </style>
 </head>
 
-<body>
-    <!-- SIDEBAR -->
+<body>  
     <div class="wrapper">
         <aside id="sidebar">
             <div class="d-flex">
@@ -25,117 +41,442 @@
                     <i class="lni lni-grid-alt"></i>
                 </button>
                 <div class="sidebar-logo">
-                    <img src="/MerchGUI/assets/images/Moov.png" alt="Logo">
-                    <h1></h1>
+                    <img src="../../assets/images/Moov.png" alt="Logo">
                 </div>
             </div>
-            <!-- ACC MANAGEMENT -->
-            <ul class="sidebar-nav">
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#acc" aria-expanded="false" aria-controls="acc">
-                        <i class="bi bi-person-fill"></i>
-                        <span>Account Management</span>
-                    </a>
-                    <ul id="acc" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-search"></i></i>Search Subscriber</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-person-fill-add"></i>Register New Subscriber</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-clock-history"></i>View Pending Subscriber</a>
-                        </li>
-                    </ul>
-                </li>
-            <!-- WEB USERS -->
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#web" aria-expanded="false" aria-controls="web">
-                        <i class="bi bi-people-fill"></i>
-                        <span>Web Users</span>
-                    </a>
-                    <ul id="web" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-eye-fill"></i></i>View Web User</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-person-fill-add"></i>Register Web User</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-person-fill-gear"></i></i>Manage Web User Levels</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-gear-fill"></i></i>Roles Configuration</a>
-                        </li>
-                    </ul>
-                </li>
+           <!-- ACC MANAGEMENT -->
+           <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#acc" aria-expanded="false" aria-controls="acc">
+                    <i class="bi bi-person-fill"></i>
+                    <span>Account Management</span>
+                </a>
+                <ul id="acc" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-search"></i></i>Search Subscriber</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-person-fill-add"></i>Register New Subscriber</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-clock-history"></i>View Pending Subscriber</a>
+                    </li>
+                </ul>
+            </li>
+        <!-- WEB USERS -->
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#web" aria-expanded="false" aria-controls="web">
+                    <i class="bi bi-people-fill"></i>
+                    <span>Web Users</span>
+                </a>
+                <ul id="web" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-eye-fill"></i></i>View Web User</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-person-fill-add"></i>Register Web User</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-person-fill-gear"></i></i>Manage Web User Levels</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-gear-fill"></i></i>Roles Configuration</a>
+                    </li>
+                </ul>
+            </li>
 
-                <!-- FUNDS -->
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#funds" aria-expanded="false" aria-controls="funds">
-                        <i class="bi bi-bank2"></i>
-                        <span>Funds</span>
-                    </a>
-                    <ul id="funds" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-cash"></i>Allocate Cash</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-wallet2"></i>Wallet to Bank</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-upload"></i>Batch Upload</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-folder-symlink-fill"></i>Batch Uploaded Files</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-file-earmark-arrow-up-fill"></i>Batch Files</a>
-                        </li>
-                    </ul>
-                </li>
+            <!-- FUNDS -->
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#funds" aria-expanded="false" aria-controls="funds">
+                    <i class="bi bi-bank2"></i>
+                    <span>Funds</span>
+                </a>
+                <ul id="funds" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-cash"></i>Allocate Cash</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-wallet2"></i>Wallet to Bank</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-upload"></i>Batch Upload</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-folder-symlink-fill"></i>Batch Uploaded Files</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"><i class="bi bi-file-earmark-arrow-up-fill"></i>Batch Files</a>
+                    </li>
+                </ul>
+            </li>
 
-              <!-- REPORTS -->
-              <li class="sidebar-item">
+          <!-- REPORTS -->
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="lni lni-stats-up"></i>
+                <span>Reports</span>
+            </a>
+        </li>
+
+           <!-- AUDIT TRAIL -->
+            <li class="sidebar-item">
                 <a href="#" class="sidebar-link">
-                    <i class="lni lni-stats-up"></i>
-                    <span>Reports</span>
+                    <i class="bi bi-file-check-fill"></i>
+                    <span>Audit Trail</span>
                 </a>
             </li>
 
-               <!-- AUDIT TRAIL -->
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="bi bi-file-check-fill"></i>
-                        <span>Audit Trail</span>
-                    </a>
-                </li>
-
-                <!-- CHANGE PASSWORD -->
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="bi bi-key-fill"></i>
-                        <span>Change Password</span>
-                    </a>
-                </li>
-            </ul>
-           
+            <!-- CHANGE PASSWORD -->
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="bi bi-key-fill"></i>
+                    <span>Change Password</span>
+                </a>
+            </li>
+        </ul>
+       
         </aside>
-        <div class="main p-3">
-            <div class="text-center">
-                <h1>
-                     <!-- ditey ilalagay yung content -->
-                </h1>
+        <div class="main">
+            <nav class="navbar navbar-expand-lg" >
+                <div class="container-fluid">
+                  <a class="navbar-brand"  href="#"></a>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white;" ><i class="bi bi-person-circle"></i>
+                        <span>Welcome, Merchant!</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                        <!-- LANGUAGE SELECTION -->
+                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            <i class="bi bi-translate"></i>
+                        </a>
+        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Philippines</a></li>
+                            <li><a class="dropdown-item" href="#">Burkina</a></li>
+                            <li><a class="dropdown-item" href="#">Dubai</a></li>
+                            <li><a class="dropdown-item" href="#">Togo</a></li>
+                            <li><a class="dropdown-item" href="#">Benin</a></li>
+                            <li><a class="dropdown-item" href="#">Mali</a></li>
+                        </ul>
+        
+                        <!-- LOGOUT -->
+                        <a class="btn" href="../Login.html" role="button" style="color: white;">
+                            <i class="bi bi-box-arrow-right"></i>
+                        </a>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+        
+            <!-- TITLE -->
+    <section class="content-header mt-3">
+        <div class="container-fluid">
+          <div class="row mb-2 mt-2">
+            <div class="col-lg-12 text-center">
+              <p class="fs-4" style="font-weight: bold;"><i class="bi bi-search" style="color: #D95F08;"></i> Search Subscriber</p>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- CONTENT START -->
+    <section class="content mb-5">
+        <div class="container">
+            <!-- ROW 1 -->
+            <div class="row">
+                <div class="col-5">
+                    <div class="form-floating fs-6">
+                        <select class="form-select" id="floatingSelect" aria-label="SELECTION">
+                            <option value="1">Account ID</option>
+                            <option value="2">MSISDN</option>
+                            <option value="3">Agent Code</option>
+                        </select>
+                        <label for="floatingSelect">MSISDN</label>
+                    </div>
+                </div>
+
+                <div class="col-5">
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="acc_id" placeholder="acc id" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                        <label for="acc_id">Account ID</label>
+                    </div>
+                </div>
+                
+                <!-- BUTTON -->
+                <div class="col-2 d-flex align-items-center justify-content-end">
+                    <div class="d-grid gap-2" style="width: 100%;">
+                        <button class="btn btn-block" type="button" style="background-color: #D95F08; color:white; height: 100%; font-size: 14px;">SEARCH</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="row">
+                <div class="col-5">
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="floatingInput" placeholder="date from">
+                        <label for="floatingInput">Date From</label>
+                    </div>
+                </div>
+
+                <div class="col-5">
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="floatingInput" placeholder="date to">
+                        <label for="floatingInput">Date To</label>
+                    </div>
+                </div>
+                
+                <!-- BUTTON -->
+                <div class="col-2 d-flex align-items-center justify-content-end">
+                    <div class="d-grid gap-2" style="width: 100%;">
+                        <button class="btn btn-block" type="button" style="background-color: #D95F08; color:white; height: 100%; font-size: 14px;">DOWNLOAD LIST</button>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- TITLE 2 -->
+    <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2 mt-2">
+            <div class="col-lg-12 text-center">
+              <p class="fs-4" style="font-weight: bold;"><i class="bi bi-person-vcard-fill" style="color: #D95F08;"></i> Subscriber Details</p>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- ACCOUNT DETAILS -->
+    <section class="content-header">
+        <div class="container">
+          <div class="row mb-2 mt-2">
+            <div class="col-lg-12">
+              <p class="fs-5" style="font-weight: bold; color: #0055BB;"> Account Details</p>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- INPUTS -->
+    <section class="content mb-5">
+        <div class="container">
+            <!-- ROW 1 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="accID" style="font-weight: bold;" value="023475757" readonly>
+                        <label for="accID">ACCOUNT ID</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nickname" style="font-weight: bold;"  value="ABDUL" readonly>
+                        <label for="nickname">NICKNAME</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="msisdn" style="font-weight: bold;"  value="1231231231" readonly>
+                        <label for="msisdn">MSISDN</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="main_amount" style="font-weight: bold;" value="111 000" oninput="this.value = this.value.replace(/[^0-9]/g, '');" readonly>
+                        <label for="main_amount">MAIN AMOUNT</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="commision_amount" style="font-weight: bold;" value="1500" readonly>
+                        <label for="commision_amount">COMMISION AMOUNT</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="acc_type" style="font-weight: bold;" value="MCOM" readonly>
+                        <label for="acc_type">ACCOUNT TYPE</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 3 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="registration_date" style="font-weight: bold;" value="01/08/2023 10:33:09" readonly>
+                        <label for="registration_date">DATE REGISTERED</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="date_modified" style="font-weight: bold;" value="01/08/2023 12:13:09" readonly>
+                        <label for="date_modified">DATE MODIFIED</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="kyc" style="font-weight: bold;" value="APPROVED" readonly>
+                        <label for="kyc">KYC</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 4 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="reference_acc" style="font-weight: bold;" value="0,37,38" readonly>
+                        <label for="reference_acc">REFERENCE ACCOUNT</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="acc_status" style="font-weight: bold;" value="ACTIVE" readonly>
+                        <label for="acc_status">ACCOUNT STATUS</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="user_id" style="font-weight: bold;" value="ABDUL.JAFAR@GMAIL.COM" readonly>
+                        <label for="user_id">USER ID</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 5 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="locked" style="font-weight: bold;" value="NO" readonly>
+                        <label for="locked">LOCKED</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="control_reference" style="font-weight: bold;" value="1" readonly>
+                        <label for="control_reference">CONTROL REFERENCE</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSONAL DETAILS -->
+    <section class="content-header">
+        <div class="container">
+          <div class="row mb-2 mt-2">
+            <div class="col-lg-12">
+              <p class="fs-5" style="font-weight: bold; color: #0055BB;"> Personal Details</p>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- INPUTS -->
+    <section class="content mb-5">
+        <div class="container">
+            <!-- ROW 1 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="fname" style="font-weight: bold;" value="ABDUL" readonly>
+                        <label for="fname">FIRST NAME</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="sname" style="font-weight: bold;" value="JUAN" readonly>
+                        <label for="sname">SECOND NAME</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="lname" style="font-weight: bold;" value="JAFAR" readonly>
+                        <label for="lname">LAST NAME</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="id_num" style="font-weight: bold;" value="04923456" readonly>
+                        <label for="id_num">ID NUMBER</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="id_desc" style="font-weight: bold;" value="N/A" readonly>
+                        <label for="id_desc">ID DESCRIPTION</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="expiry_id" style="font-weight: bold;" value="08/23/2024 11:23:09" readonly>
+                        <label for="expiry_id">ID EXPIRY DATE</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 3 -->
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nationality" style="font-weight: bold;" value="AFRICAN" readonly>
+                        <label for="nationalty">NATIONALITY</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="gender" style="font-weight: bold;" value="MALE" readonly>
+                        <label for="gender">GENDER</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="dob" style="font-weight: bold;" value="08/23/1984 00:00:00" readonly>
+                        <label for="dob">DATE OF BIRTH</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            
+        
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../../assets/js/script.js"></script>
 </body>
 
 </html>

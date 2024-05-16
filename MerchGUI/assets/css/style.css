@@ -15,11 +15,6 @@ li {
     list-style: none;
 }
 
-h1 {
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -29,11 +24,14 @@ body {
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
-    background-color: #fafbfe;
+    background-color: #fff;
+    min-width: 0;
 }
 
 #sidebar {
@@ -44,6 +42,14 @@ body {
     background-color: #F4E6DC;
     display: flex;
     flex-direction: column;
+}
+
+.sidebar-logo img {
+    max-width: 50%; /* Ensure the image does not exceed the sidebar width */
+    height: 50%; /* Maintain the aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 1rem; /* Center the image horizontally */
+    margin-top: 0.7rem;
 }
 
 #sidebar.expand {
@@ -65,18 +71,32 @@ body {
 
 .sidebar-logo {
     margin: auto 0;
-    text-align: center; /* Ensure the logo is centered */
 }
 
-.sidebar-logo img {
-    max-width: 100%; /* Ensure the image does not exceed the sidebar width */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Center the image */
-    margin: 0 auto; /* Center the image horizontally */
+.sidebar-logo a {
+    color: #000;
+    font-size: 1.15rem;
+    font-weight: 600;
 }
+
 #sidebar:not(.expand) .sidebar-logo,
 #sidebar:not(.expand) a.sidebar-link span {
     display: none;
+}
+
+#sidebar.expand .sidebar-logo,
+#sidebar.expand a.sidebar-link span {
+    animation: fadeIn .25s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .sidebar-nav {
@@ -93,7 +113,8 @@ a.sidebar-link {
     border-left: 3px solid transparent;
 }
 
-.sidebar-link i {
+.sidebar-link i,
+.dropdown-item i {
     font-size: 1.1rem;
     margin-right: .75rem;
 }
@@ -111,7 +132,7 @@ a.sidebar-link:hover {
     position: absolute;
     top: 0;
     left: 70px;
-    background-color: #D9D9D9;
+    background-color: #0e2238;
     padding: 0;
     min-width: 15rem;
     display: none;
@@ -141,3 +162,21 @@ a.sidebar-link:hover {
     transform: rotate(45deg);
     transition: all .2s ease-out;
 }
+
+.navbar {
+    background-color: #0055BB;
+    box-shadow: 0 0 2rem 0 rgba(33, 37, 41, .1);
+}
+
+.navbar-expand .navbar-collapse {
+    min-width: 200px;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+@media (min-width: 768px) {}
