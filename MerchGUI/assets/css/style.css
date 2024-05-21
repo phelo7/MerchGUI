@@ -45,11 +45,11 @@ body {
 }
 
 .sidebar-logo img {
-    max-width: 50%; /* Ensure the image does not exceed the sidebar width */
-    height: 50%; /* Maintain the aspect ratio */
-    display: block; /* Center the image */
+    max-width: 35%; /* Ensure the image does not exceed the sidebar width */
+    height: 35%; /* Maintain the aspect ratio */
     margin: 0 1rem; /* Center the image horizontally */
     margin-top: 0.7rem;
+    margin-left: 1.8rem;
 }
 
 #sidebar.expand {
@@ -89,6 +89,36 @@ body {
     animation: fadeIn .25s ease;
 }
 
+.sidebar-logo span h1 {
+    margin: auto 0;
+}
+
+.sidebar-logo span h1 {
+    color: #000;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-right: 6rem;
+    font-weight:600;
+    text-align: center;
+}
+.sidebar-logo h3 {
+    color: #000;
+    font-size: 0.6rem;
+    margin-top: 0.6rem;
+    margin-right: 6rem;
+    text-align: center;
+    font-weight:600;
+}
+
+#sidebar:not(.expand) .sidebar-logo span h1,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+#sidebar.expand .sidebar-logo,
+#sidebar.expand a.sidebar-link span {
+    animation: fadeIn .25s ease;
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -132,7 +162,7 @@ a.sidebar-link:hover {
     position: absolute;
     top: 0;
     left: 70px;
-    background-color: #0e2238;
+    background-color: #F4E6DC;
     padding: 0;
     min-width: 15rem;
     display: none;
