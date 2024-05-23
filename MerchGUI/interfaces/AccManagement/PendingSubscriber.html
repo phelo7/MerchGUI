@@ -82,7 +82,7 @@
                 </a>
                 <ul id="acc" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="../AccManagement/sidebar.html" class="sidebar-link"><i class="bi bi-search"></i></i>Search Subscriber</a>
+                        <a href="../AccManagement/Main.html" class="sidebar-link"><i class="bi bi-search"></i></i>Search Subscriber</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="../AccManagement/Register.html" class="sidebar-link"><i class="bi bi-person-fill-add"></i>Register New Subscriber</a>
@@ -127,23 +127,23 @@
                         <a href="../Funds/AllocateCash.html" class="sidebar-link"><i class="bi bi-cash"></i>Allocate Cash</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-wallet2"></i>Wallet to Bank</a>
+                        <a href="../Funds/WalletToBank.html" class="sidebar-link"><i class="bi bi-wallet2"></i>Wallet to Bank</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-upload"></i>Batch Upload</a>
+                        <a href="../Funds/BatchUpload.html" class="sidebar-link"><i class="bi bi-upload"></i>Batch Upload</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-folder-symlink-fill"></i>Batch Uploaded Files</a>
+                        <a href="../Funds/BatchUploadedFiles.html" class="sidebar-link"><i class="bi bi-folder-symlink-fill"></i>Batch Uploaded Files</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-file-earmark-arrow-up-fill"></i>Batch Files</a>
+                        <a href="../Funds/BatchFiles.html" class="sidebar-link"><i class="bi bi-file-earmark-arrow-up-fill"></i>Batch Files</a>
                     </li>
                 </ul>
             </li>
 
             <!-- REPORTS -->
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="../Reports.html" class="sidebar-link">
                     <i class="lni lni-stats-up"></i>
                     <span>Reports</span>
                 </a>
@@ -151,7 +151,7 @@
 
             <!-- AUDIT TRAIL -->
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="../AuditTrail.html" class="sidebar-link">
                     <i class="bi bi-file-check-fill"></i>
                     <span>Audit Trail</span>
                 </a>
@@ -181,18 +181,19 @@
                     </ul>
                     <form class="d-flex">
                         <!-- LANGUAGE SELECTION -->
-                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                            <i class="bi bi-translate"></i>
-                        </a>
-        
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Philippines</a></li>
-                            <li><a class="dropdown-item" href="#">Burkina</a></li>
-                            <li><a class="dropdown-item" href="#">Dubai</a></li>
-                            <li><a class="dropdown-item" href="#">Togo</a></li>
-                            <li><a class="dropdown-item" href="#">Benin</a></li>
-                            <li><a class="dropdown-item" href="#">Mali</a></li>
-                        </ul>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" style="background-color: #0055BB; color: #fff; border-color: transparent;">
+                                <i class="bi bi-translate"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" href="#">Philippines</a></li>
+                                <li><a class="dropdown-item" href="#">Burkina</a></li>
+                                <li><a class="dropdown-item" href="#">Dubai</a></li>
+                                <li><a class="dropdown-item" href="#">Togo</a></li>
+                                <li><a class="dropdown-item" href="#">Benin</a></li>
+                                <li><a class="dropdown-item" href="#">Mali</a></li>
+                            </ul>
+                        </div>
         
                         <!-- LOGOUT -->
                         <a class="btn" href="../Login.html" role="button" style="color: white;">

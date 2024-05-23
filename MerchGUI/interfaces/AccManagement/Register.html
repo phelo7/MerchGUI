@@ -57,7 +57,7 @@
                 </a>
                 <ul id="acc" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="../AccManagement/sidebar.html" class="sidebar-link"><i class="bi bi-search"></i></i>Search Subscriber</a>
+                        <a href="../AccManagement/Main.html" class="sidebar-link"><i class="bi bi-search"></i></i>Search Subscriber</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="../AccManagement/Register.html" class="sidebar-link"><i class="bi bi-person-fill-add"></i>Register New Subscriber</a>
@@ -102,23 +102,23 @@
                         <a href="../Funds/AllocateCash.html" class="sidebar-link"><i class="bi bi-cash"></i>Allocate Cash</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-wallet2"></i>Wallet to Bank</a>
+                        <a href="../Funds/WalletToBank.html" class="sidebar-link"><i class="bi bi-wallet2"></i>Wallet to Bank</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-upload"></i>Batch Upload</a>
+                        <a href="../Funds/BatchUpload.html" class="sidebar-link"><i class="bi bi-upload"></i>Batch Upload</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-folder-symlink-fill"></i>Batch Uploaded Files</a>
+                        <a href="../Funds/BatchUploadedFiles.html" class="sidebar-link"><i class="bi bi-folder-symlink-fill"></i>Batch Uploaded Files</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-file-earmark-arrow-up-fill"></i>Batch Files</a>
+                        <a href="../Funds/BatchFiles.html" class="sidebar-link"><i class="bi bi-file-earmark-arrow-up-fill"></i>Batch Files</a>
                     </li>
                 </ul>
             </li>
 
           <!-- REPORTS -->
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="../Reports.html" class="sidebar-link">
                 <i class="lni lni-stats-up"></i>
                 <span>Reports</span>
             </a>
@@ -126,7 +126,7 @@
 
            <!-- AUDIT TRAIL -->
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="../AuditTrail.html" class="sidebar-link">
                     <i class="bi bi-file-check-fill"></i>
                     <span>Audit Trail</span>
                 </a>
@@ -155,18 +155,19 @@
                     </ul>
                     <form class="d-flex">
                         <!-- LANGUAGE SELECTION -->
-                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                            <i class="bi bi-translate"></i>
-                        </a>
-        
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Philippines</a></li>
-                            <li><a class="dropdown-item" href="#">Burkina</a></li>
-                            <li><a class="dropdown-item" href="#">Dubai</a></li>
-                            <li><a class="dropdown-item" href="#">Togo</a></li>
-                            <li><a class="dropdown-item" href="#">Benin</a></li>
-                            <li><a class="dropdown-item" href="#">Mali</a></li>
-                        </ul>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" style="background-color: #0055BB; color: #fff; border-color: transparent;">
+                                <i class="bi bi-translate"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" href="#">Philippines</a></li>
+                                <li><a class="dropdown-item" href="#">Burkina</a></li>
+                                <li><a class="dropdown-item" href="#">Dubai</a></li>
+                                <li><a class="dropdown-item" href="#">Togo</a></li>
+                                <li><a class="dropdown-item" href="#">Benin</a></li>
+                                <li><a class="dropdown-item" href="#">Mali</a></li>
+                            </ul>
+                        </div>
         
                         <!-- LOGOUT -->
                         <a class="btn" href="../Login.html" role="button" style="color: white;">
@@ -191,7 +192,7 @@
     <!-- ACCOUNT INFORMATION -->
     <section class="content-header">
         <div class="container">
-          <div class="row mb-2 mt-2">
+          <div class="row">
             <div class="col-lg-12">
               <p class="fs-5" style="font-weight: bold; color: #0055BB;"> Account Information</p>
             </div>
@@ -200,19 +201,19 @@
     </section>
 
     <!-- INPUTS -->
-    <section class="content mb-5">
+    <section class="content mb-3">
         <div class="container">
             <!-- ROW 1 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="nickname" placeholder="nickname">
                         <label for="nickname">NICKNAME</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="number" class="form-control" id="mobile_no" placeholder="mobile num" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                         <label for="mobile_no">AUTHORIZED MOBILE NO.</label>
                     </div>
@@ -246,7 +247,7 @@
     <!-- PERSONAL INFORMATION -->
     <section class="content-header">
         <div class="container">
-          <div class="row mb-2 mt-2">
+          <div class="row">
             <div class="col-lg-12">
               <p class="fs-5" style="font-weight: bold; color: #0055BB;"> Personal Information</p>
             </div>
@@ -255,33 +256,33 @@
     </section>
 
     <!-- INPUTS -->
-    <section class="content mb-5">
+    <section class="content mb-3">
         <div class="container">
             <!-- ROW 1 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="fname" placeholder="fname">
                         <label for="fname">FIRST NAME</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="sname" placeholder="sec name">
                         <label for="sname">SECOND NAME (OPTIONAL)</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="lname" placeholder="MSISDN">
                         <label for="lname">LAST NAME</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="nationality" placeholder="nationality">
                         <label for="nationality">NATIONALITY</label>
                     </div>
@@ -291,14 +292,14 @@
             <!-- ROW 2 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="datetime-local" class="form-control" id="dob" placeholder="dob">
                         <label for="dob">DATE OF BIRTH</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="pob" placeholder="pob">
                         <label for="pob">PLACE OF BIRTH</label>
                     </div>
@@ -331,14 +332,14 @@
             <!-- ROW 3 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="id_desc" placeholder="id description">
                         <label for="id_desc">ID DESCRIPTION</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="number" class="form-control" id="id_expiry" placeholder="id expiry" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                         <label for="id_expiry">ID EXPIRY</label>
                     </div>
@@ -350,7 +351,7 @@
     <!-- CONTACT INFORMATION -->
     <section class="content-header">
         <div class="container">
-          <div class="row mb-2 mt-2">
+          <div class="row">
             <div class="col-lg-12">
               <p class="fs-5" style="font-weight: bold; color: #0055BB;"> Contact Information</p>
             </div>
@@ -364,28 +365,28 @@
             <!-- ROW 1 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="company" placeholder="company">
                         <label for="company">COMPANY (OPTIONAL)</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="profession" placeholder="PROFESSION">
                         <label for="profession">PROFESSION (OPTIONAL)</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="email" placeholder="email">
                         <label for="email">EMAIL (OPTIONAL)</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="number" class="form-control" id="alternate_num" placeholder="alternate num" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                         <label for="alternate_num">ALTERNATE NUMBER</label>
                     </div>
@@ -395,28 +396,28 @@
             <!-- ROW 2 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="building_num" placeholder="building num">
                         <label for="building_num">BUILDING NUMBER</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="street_name" placeholder="street name">
                         <label for="street_num">STREET NAME</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="city_village" placeholder="city/village">
                         <label for="city_village">CITY/VILLAGE</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="region" placeholder="region">
                         <label for="region">REGION</label>
                     </div>
@@ -427,7 +428,7 @@
                 <div class="col-12 d-flex justify-content-center">
                     <!-- BUTTON -->
                     <div class="d-grid gap-2" style="width: 20%;">
-                        <button class="btn btn-block" type="button" style="background-color: #D95F08; color:white; height: 100%; font-size: 14px;" role="button" aria-pressed="true" data-bs-toggle="modal" data-bs-target="#messageModal">REGISTER</button>
+                        <button class="btn btn-block" type="button" style="background-color: #D95F08; color:white; height: 100%; font-size: 16px;" role="button" aria-pressed="true" data-bs-toggle="modal" data-bs-target="#messageModal"><i class="bi bi-person-add"></i> REGISTER</button>
                     </div>
                 </div>
             </div>
@@ -439,15 +440,19 @@
         <div class="modal-dialog modal-dialog-centered" style="border-radius: 20px;">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: #D95F08;color:white;">
-                    <h5 class="modal-title text-center" id="msgModalLabel" style="text-shadow: 1px 0px 2px rgb(26, 26, 26);"> MESSAGE!</h5>
+                    <h5 class="modal-title text-center" id="msgModalLabel"><i class="bi bi-envelope-check"></i> MESSAGE!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="background-color: #F4E6DC;">
-                    <div class="row px-5 pt-2 mb-5">
+                    <div class="row px-5 pt-2 mb-3">
                         <div class="col-12 p-2">
-                            <input type="text" class="form-control text-center" id="message" style="font-weight: bold;" value="SUBSCRIBER SUCCESSFULLY REGISTERED!" style="border-radius: 20px; border-color: #B6B6B6;" readonly>
+                            <div class="p-2 text-center" style="border-radius: 10px; background-color: white;">
+                                <label class="mb-2" for="pin">SUBSCRIBER SUCCESSFULLY REGISTERED!</label>
+                            </div>
                         </div>
                     </div>
+
+                    <hr style="border-top: 3px solid #7a7a7a;">
 
                     <!-- BUTTONS -->
                     <div class="row">
@@ -458,13 +463,14 @@
                            
                         </div>
                         <div class="col-3">
-                            <a href="#" class="btn btn-primary" style="width: 100%;">OKAY</a>
+                            <a href="#" class="btn btn-primary" style="width: 100%;"><i class="bi bi-patch-check"></i> OKAY</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
