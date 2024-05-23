@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,13 +58,13 @@
                 </a>
                 <ul id="acc" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-search"></i></i>Search Subscriber</a>
+                        <a href="../AccManagement/sidebar.html" class="sidebar-link"><i class="bi bi-search"></i></i>Search Subscriber</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-person-fill-add"></i>Register New Subscriber</a>
+                        <a href="../AccManagement/Register.html" class="sidebar-link"><i class="bi bi-person-fill-add"></i>Register New Subscriber</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-clock-history"></i>View Pending Subscriber</a>
+                        <a href="../AccManagement/PendingSubscriber.html" class="sidebar-link"><i class="bi bi-clock-history"></i>View Pending Subscriber</a>
                     </li>
                 </ul>
             </li>
@@ -78,10 +77,10 @@
                 </a>
                 <ul id="web" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-eye-fill"></i></i>View Web User</a>
+                        <a href="../WebUsers/ViewUser.html" class="sidebar-link"><i class="bi bi-eye-fill"></i></i>View Web User</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-person-fill-add"></i>Register Web User</a>
+                        <a href="../WebUsers/RegisterUser.html" class="sidebar-link"><i class="bi bi-person-fill-add"></i>Register Web User</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link"><i class="bi bi-person-fill-gear"></i></i>Manage Web User Levels</a>
@@ -158,18 +157,19 @@
                     </ul>
                     <form class="d-flex">
                         <!-- LANGUAGE SELECTION -->
-                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                            <i class="bi bi-translate"></i>
-                        </a>
-        
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Philippines</a></li>
-                            <li><a class="dropdown-item" href="#">Burkina</a></li>
-                            <li><a class="dropdown-item" href="#">Dubai</a></li>
-                            <li><a class="dropdown-item" href="#">Togo</a></li>
-                            <li><a class="dropdown-item" href="#">Benin</a></li>
-                            <li><a class="dropdown-item" href="#">Mali</a></li>
-                        </ul>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" style="background-color: #0055BB; color: #fff; border-color: transparent;">
+                                <i class="bi bi-translate"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" href="#">Philippines</a></li>
+                                <li><a class="dropdown-item" href="#">Burkina</a></li>
+                                <li><a class="dropdown-item" href="#">Dubai</a></li>
+                                <li><a class="dropdown-item" href="#">Togo</a></li>
+                                <li><a class="dropdown-item" href="#">Benin</a></li>
+                                <li><a class="dropdown-item" href="#">Mali</a></li>
+                            </ul>
+                          </div>
         
                         <!-- LOGOUT -->
                         <a class="btn" href="../Login.html" role="button" style="color: white;">
