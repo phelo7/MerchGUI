@@ -165,23 +165,23 @@
                             <a href="../Funds/AllocateCash.html" class="sidebar-link"><i class="bi bi-cash"></i>Allocate Cash</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-wallet2"></i>Wallet to Bank</a>
+                            <a href="../Funds/WalletToBank.html" class="sidebar-link"><i class="bi bi-wallet2"></i>Wallet to Bank</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-upload"></i>Batch Upload</a>
+                            <a href="../Funds/BatchUpload.html" class="sidebar-link"><i class="bi bi-upload"></i>Batch Upload</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-folder-symlink-fill"></i>Batch Uploaded Files</a>
+                            <a href="../Funds/BatchUploadedFiles.html" class="sidebar-link"><i class="bi bi-folder-symlink-fill"></i>Batch Uploaded Files</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"><i class="bi bi-file-earmark-arrow-up-fill"></i>Batch Files</a>
+                            <a href="../Funds/BatchFiles.html" class="sidebar-link"><i class="bi bi-file-earmark-arrow-up-fill"></i>Batch Files</a>
                         </li>
                     </ul>
                 </li>
 
                 <!-- REPORTS -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="../Reports.html" class="sidebar-link">
                         <i class="lni lni-stats-up"></i>
                         <span>Reports</span>
                     </a>
@@ -189,7 +189,7 @@
 
                 <!-- AUDIT TRAIL -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="../AuditTrail.html" class="sidebar-link">
                         <i class="bi bi-file-check-fill"></i>
                         <span>Audit Trail</span>
                     </a>
@@ -414,7 +414,7 @@
     </div>
 
 
-    <!-- Message Modal -->
+    <!-- Confirmation Modal -->
     <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -423,11 +423,34 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p id="modalMessage">Are you sure you want to change the toggle state?</p>
+                    <div class="p-2 text-center" style="border-radius: 10px; background-color: white;">
+                        <p id="modalMessage">Are you sure you want to change the toggle state?</p>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="noButton">No</button>
-                    <button type="button" class="btn btn-primary" id="yesButton">Yes</button>
+                    <button type="button" class="btn btn-primary" id="yesButton" aria-pressed="true" data-bs-toggle="modal" data-bs-target="#messageModal"><i class="bi bi-patch-check"></i> Yes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="noButton"><i class="bi bi-x-octagon"></i> No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Modal -->
+    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="p-2 text-center" style="border-radius: 10px; background-color: white;">
+                        <p id="modalMessage">Are you sure you want to change the toggle state?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="../WebUsers/RolesConfiguration.html" type="button" class="btn btn-primary"><i class="bi bi-patch-check"></i> YES</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="noButton"><i class="bi bi-x-octagon"></i> No</button>
                 </div>
             </div>
         </div>

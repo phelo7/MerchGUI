@@ -102,23 +102,23 @@
                         <a href="../Funds/AllocateCash.html" class="sidebar-link"><i class="bi bi-cash"></i>Allocate Cash</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-wallet2"></i>Wallet to Bank</a>
+                        <a href="../Funds/WalletToBank.html" class="sidebar-link"><i class="bi bi-wallet2"></i>Wallet to Bank</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-upload"></i>Batch Upload</a>
+                        <a href="../Funds/BatchUpload.html" class="sidebar-link"><i class="bi bi-upload"></i>Batch Upload</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-folder-symlink-fill"></i>Batch Uploaded Files</a>
+                        <a href="../Funds/BatchUploadedFiles.html" class="sidebar-link"><i class="bi bi-folder-symlink-fill"></i>Batch Uploaded Files</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="bi bi-file-earmark-arrow-up-fill"></i>Batch Files</a>
+                        <a href="../Funds/BatchFiles.html" class="sidebar-link"><i class="bi bi-file-earmark-arrow-up-fill"></i>Batch Files</a>
                     </li>
                 </ul>
             </li>
 
           <!-- REPORTS -->
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="../Reports.html" class="sidebar-link">
                 <i class="lni lni-stats-up"></i>
                 <span>Reports</span>
             </a>
@@ -126,7 +126,7 @@
 
            <!-- AUDIT TRAIL -->
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="../AuditTrail.html" class="sidebar-link">
                     <i class="bi bi-file-check-fill"></i>
                     <span>Audit Trail</span>
                 </a>
@@ -192,7 +192,7 @@
     <!-- ACCOUNT INFORMATION -->
     <section class="content-header">
         <div class="container">
-          <div class="row mb-2 mt-2">
+          <div class="row">
             <div class="col-lg-12">
               <p class="fs-5" style="font-weight: bold; color: #0055BB;"> Account Information</p>
             </div>
@@ -201,19 +201,19 @@
     </section>
 
     <!-- INPUTS -->
-    <section class="content mb-5">
+    <section class="content mb-3">
         <div class="container">
             <!-- ROW 1 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="nickname" placeholder="nickname">
                         <label for="nickname">NICKNAME</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="number" class="form-control" id="mobile_no" placeholder="mobile num" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                         <label for="mobile_no">AUTHORIZED MOBILE NO.</label>
                     </div>
@@ -247,7 +247,7 @@
     <!-- PERSONAL INFORMATION -->
     <section class="content-header">
         <div class="container">
-          <div class="row mb-2 mt-2">
+          <div class="row">
             <div class="col-lg-12">
               <p class="fs-5" style="font-weight: bold; color: #0055BB;"> Personal Information</p>
             </div>
@@ -256,33 +256,33 @@
     </section>
 
     <!-- INPUTS -->
-    <section class="content mb-5">
+    <section class="content mb-3">
         <div class="container">
             <!-- ROW 1 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="fname" placeholder="fname">
                         <label for="fname">FIRST NAME</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="sname" placeholder="sec name">
                         <label for="sname">SECOND NAME (OPTIONAL)</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="lname" placeholder="MSISDN">
                         <label for="lname">LAST NAME</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="nationality" placeholder="nationality">
                         <label for="nationality">NATIONALITY</label>
                     </div>
@@ -292,14 +292,14 @@
             <!-- ROW 2 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="datetime-local" class="form-control" id="dob" placeholder="dob">
                         <label for="dob">DATE OF BIRTH</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="pob" placeholder="pob">
                         <label for="pob">PLACE OF BIRTH</label>
                     </div>
@@ -332,14 +332,14 @@
             <!-- ROW 3 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="id_desc" placeholder="id description">
                         <label for="id_desc">ID DESCRIPTION</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="number" class="form-control" id="id_expiry" placeholder="id expiry" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                         <label for="id_expiry">ID EXPIRY</label>
                     </div>
@@ -351,7 +351,7 @@
     <!-- CONTACT INFORMATION -->
     <section class="content-header">
         <div class="container">
-          <div class="row mb-2 mt-2">
+          <div class="row">
             <div class="col-lg-12">
               <p class="fs-5" style="font-weight: bold; color: #0055BB;"> Contact Information</p>
             </div>
@@ -365,28 +365,28 @@
             <!-- ROW 1 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="company" placeholder="company">
                         <label for="company">COMPANY (OPTIONAL)</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="profession" placeholder="PROFESSION">
                         <label for="profession">PROFESSION (OPTIONAL)</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="email" placeholder="email">
                         <label for="email">EMAIL (OPTIONAL)</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="number" class="form-control" id="alternate_num" placeholder="alternate num" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                         <label for="alternate_num">ALTERNATE NUMBER</label>
                     </div>
@@ -396,28 +396,28 @@
             <!-- ROW 2 -->
             <div class="row">
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="building_num" placeholder="building num">
                         <label for="building_num">BUILDING NUMBER</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="street_name" placeholder="street name">
                         <label for="street_num">STREET NAME</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="city_village" placeholder="city/village">
                         <label for="city_village">CITY/VILLAGE</label>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="region" placeholder="region">
                         <label for="region">REGION</label>
                     </div>
